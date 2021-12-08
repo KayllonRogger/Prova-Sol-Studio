@@ -5,6 +5,6 @@
  * Manipulação de DOM e SVG utilizando JS. 
  * Não utilização de bibliotecas externas.
  
- ![Alt text](print tela de jogo/.jpg?raw=true)
+ ![Alt text](print_tela_de_jogo/.jpg?raw=true)
 
 Utilização somente de JS, HTML e CSS
