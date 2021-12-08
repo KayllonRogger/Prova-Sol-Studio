@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Prova Sol</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="display.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo_qual_e_o_numero">
+            Qual é o número?
+        </h1>
+        <figure class="retangulo">
+            <svg width="205" height="1" viewBox="0 0 205 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="205" height="1" transform="matrix(1 0 0 -1 0 1)" fill="#CFCFCF"/>
+            </svg>    
+        </figure>
+    </header>
+    <main>
+    <section><p id="maior-menor-acertou"></p></section>
+    <div class="container">
+    <section className="digitos">
+        <figure>
+            <svg width="56" height="100" viewBox="0 0 56 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none" id="digito-tres">
+                <path id="A3" d="M12.7918 10.9848H42.6309L52.9545 1.18126C51.9989 0.442677 50.8034 4.76837e-06 49.5038 4.76837e-06H5.65773C4.36601 4.76837e-06 3.18002 0.436367 2.2276 1.16469L12.7918 10.9848Z" fill="#DDDDDD"/>
+                <path id="B3" d="M1.27122 2.08556C0.477403 3.06007 0 4.30288 0 5.65694V44.0221C0 46.2212 1.257 48.1229 3.09003 49.0588L11.7352 42.5796V11.8126L1.27122 2.08556Z" fill="#DDDDDD"/>
+                <path id="C3" d="M43.4255 12.049V42.5707L52.0707 49.0498C53.9037 48.114 55.1607 46.2123 55.1607 44.0131V5.64801C55.1607 4.30184 54.6888 3.06851 53.9053 2.09794L43.4255 12.049Z" fill="#DDDDDD"/>
+                <path id="D3" d="M12.7918 89.0144H42.6309L52.9545 98.8187C51.9989 99.5557 50.8034 100 49.5038 100H5.65773C4.36601 100 3.18002 99.5621 2.2276 98.8337L12.7918 89.0144Z" fill="#DDDDDD"/>
+                <path id="E3" d="M1.27122 97.9218C0.477403 96.9481 0 95.7061 0 94.3512V55.9861C0 53.7869 1.257 51.886 3.09003 50.9494L11.7352 57.4285V88.1956L1.27122 97.9218Z" fill="#DDDDDD"/>
+                <path id="F3" d="M52.1128 51.5337L43.9255 57.6697V87.7266L53.8357 97.1375C54.3572 96.3312 54.6607 95.373 54.6607 94.3423V55.9772C54.6607 54.0835 53.6381 52.431 52.1128 51.5337Z" fill="#DDDDDD"/>
+                <path id="G3" d="M42.5551 43.9926H12.6056L4.62952 49.8721L12.6056 55.7523H24.0243H31.1363H42.5551L50.5311 49.8721L42.5551 43.9926Z" fill="#DDDDDD"/>
+            </svg>
+        </figure>
+        <figure>
+            <svg width="56" height="100" viewBox="0 0 56 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none" id="digito-dois">
+                <path id="A2" d="M12.7918 10.9848H42.6309L52.9545 1.18126C51.9989 0.442677 50.8034 4.76837e-06 49.5038 4.76837e-06H5.65773C4.36601 4.76837e-06 3.18002 0.436367 2.2276 1.16469L12.7918 10.9848Z" fill="#DDDDDD"/>
+                <path id="B2" d="M1.27122 2.08556C0.477403 3.06007 0 4.30288 0 5.65694V44.0221C0 46.2212 1.257 48.1229 3.09003 49.0588L11.7352 42.5796V11.8126L1.27122 2.08556Z" fill="#DDDDDD"/>
+                <path id="C2" d="M43.4255 12.049V42.5707L52.0707 49.0498C53.9037 48.114 55.1607 46.2123 55.1607 44.0131V5.64801C55.1607 4.30184 54.6888 3.06851 53.9053 2.09794L43.4255 12.049Z" fill="#DDDDDD"/>
+                <path id="D2" d="M12.7918 89.0144H42.6309L52.9545 98.8187C51.9989 99.5557 50.8034 100 49.5038 100H5.65773C4.36601 100 3.18002 99.5621 2.2276 98.8337L12.7918 89.0144Z" fill="#DDDDDD"/>
+                <path id="E2" d="M1.27122 97.9218C0.477403 96.9481 0 95.7061 0 94.3512V55.9861C0 53.7869 1.257 51.886 3.09003 50.9494L11.7352 57.4285V88.1956L1.27122 97.9218Z" fill="#DDDDDD"/>
+                <path id="F2" d="M52.1128 51.5337L43.9255 57.6697V87.7266L53.8357 97.1375C54.3572 96.3312 54.6607 95.373 54.6607 94.3423V55.9772C54.6607 54.0835 53.6381 52.431 52.1128 51.5337Z" fill="#DDDDDD"/>
+                <path id="G2" d="M42.5551 43.9926H12.6056L4.62952 49.8721L12.6056 55.7523H24.0243H31.1363H42.5551L50.5311 49.8721L42.5551 43.9926Z" fill="#DDDDDD"/>
+            </svg>
+        </figure>
+        <figure>
+            <svg width="56" height="100" viewBox="0 0 56 100" fill="none" xmlns="http://www.w3.org/2000/svg" id="digito-1" style="display: flex;">
+                <path id="A1" d="M12.7918 10.9848H42.6309L52.9545 1.18126C51.9989 0.442677 50.8034 4.76837e-06 49.5038 4.76837e-06H5.65773C4.36601 4.76837e-06 3.18002 0.436367 2.2276 1.16469L12.7918 10.9848Z" fill="#DDDDDD"/>
+                <path id="B1" d="M1.27122 2.08556C0.477403 3.06007 0 4.30288 0 5.65694V44.0221C0 46.2212 1.257 48.1229 3.09003 49.0588L11.7352 42.5796V11.8126L1.27122 2.08556Z" fill="#DDDDDD"/>
+                <path id="C1" d="M43.4255 12.049V42.5707L52.0707 49.0498C53.9037 48.114 55.1607 46.2123 55.1607 44.0131V5.64801C55.1607 4.30184 54.6888 3.06851 53.9053 2.09794L43.4255 12.049Z" fill="#DDDDDD"/>
+                <path id="D1" d="M12.7918 89.0144H42.6309L52.9545 98.8187C51.9989 99.5557 50.8034 100 49.5038 100H5.65773C4.36601 100 3.18002 99.5621 2.2276 98.8337L12.7918 89.0144Z" fill="#DDDDDD"/>
+                <path id="E1" d="M1.27122 97.9218C0.477403 96.9481 0 95.7061 0 94.3512V55.9861C0 53.7869 1.257 51.886 3.09003 50.9494L11.7352 57.4285V88.1956L1.27122 97.9218Z" fill="#DDDDDD"/>
+                <path id="F1" d="M52.1128 51.5337L43.9255 57.6697V87.7266L53.8357 97.1375C54.3572 96.3312 54.6607 95.373 54.6607 94.3423V55.9772C54.6607 54.0835 53.6381 52.431 52.1128 51.5337Z" fill="#DDDDDD"/>
+                <path id="G1" d="M42.5551 43.9926H12.6056L4.62952 49.8721L12.6056 55.7523H24.0243H31.1363H42.5551L50.5311 49.8721L42.5551 43.9926Z" fill="#DDDDDD"/>
+            </svg>
+        </figure>
+    </section>
+    <div className="reset">
+    <section >
+        <button id="botao-reset" type="button" style="display: none;">
+            <figure className="refresh-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="refresh_24px">
+                    <path id="icon/navigation/refresh_24px" d="M16.2364 7.7625C15.1482 6.675 13.6548 6 11.9962 6C8.67917 6 6 8.685 6 12C6 15.315 8.67917 18 11.9962 18C14.7955 18 17.1295 16.0875 17.7974 13.5H16.2364C15.621 15.2475 13.955 16.5 11.9962 16.5C9.51219 16.5 7.49343 14.4825 7.49343 12C7.49343 9.5175 9.51219 7.5 11.9962 7.5C13.242 7.5 14.3527 8.0175 15.1632 8.835L12.7467 11.25H18V6L16.2364 7.7625Z" fill="white"/>
+                    </g>
+                </svg>    
+            </figure>
+            <p style="display: inline-block; vertical-align: super;">Nova Partida</p>
+        </button>
+    </section>
+    </div>
+    <section className="campo-enviar">
+        <input type="number" id="numero-digitado" placeholder="Digite o palpite" max="300" min="1" step="1 ">
+        <button id="botao-enviar" type="button">Enviar</button>
+    </section>
+    </div>
+    </main>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
